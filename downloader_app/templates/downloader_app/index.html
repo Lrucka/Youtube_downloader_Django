@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stažení videa z YouTube</title>
+</head>
+<body>
+    <h1>Stažení videa z YouTube</h1>
+    <form method="post" action="/">
+        {% csrf_token %}
+        <label for="video_url">Zadejte URL videa z YouTube:</label>
+        <input type="text" id="video_url" name="video_url" required>
+        <button type="submit">Stáhnout</button>
+    </form>
+</body>
+</html>
